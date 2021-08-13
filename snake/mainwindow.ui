@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>909</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>190</y>
+      <width>141</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="StartButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>开始游戏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RestartButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>重新开始</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="LoadButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>载入游戏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ContinueButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>继续游戏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="PauseButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>暂停游戏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SaveButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>保存游戏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="QuitButton">
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>退出游戏</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="Infolabel">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>20</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>未开始游戏</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Scorelabel">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>80</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Score: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Timelabel">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>140</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Time: 0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="Startaction"/>
+   <addaction name="Restartaction"/>
+   <addaction name="Loadaction"/>
+   <addaction name="Continueaction"/>
+   <addaction name="Pauseaction"/>
+   <addaction name="Saveaction"/>
+   <addaction name="Quitaction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1090</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>游戏</string>
+    </property>
+    <addaction name="Startaction"/>
+    <addaction name="Restartaction"/>
+    <addaction name="Continueaction"/>
+    <addaction name="Pauseaction"/>
+    <addaction name="Quitaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="Loadaction"/>
+    <addaction name="Saveaction"/>
+   </widget>
+   <addaction name="menu_8"/>
+   <addaction name="menu_9"/>
+  </widget>
+  <action name="Startaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Start.png</normaloff>../pics/Start.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始游戏(S)</string>
+   </property>
+   <property name="toolTip">
+    <string>开始游戏(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="Restartaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Restart.png</normaloff>../pics/Restart.png</iconset>
+   </property>
+   <property name="text">
+    <string>重新开始(R)</string>
+   </property>
+   <property name="toolTip">
+    <string>重新开始(R)</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="Loadaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Load.png</normaloff>../pics/Load.png</iconset>
+   </property>
+   <property name="text">
+    <string>载入游戏(L)</string>
+   </property>
+   <property name="toolTip">
+    <string>载入游戏(L)</string>
+   </property>
+   <property name="shortcut">
+    <string>L</string>
+   </property>
+  </action>
+  <action name="Continueaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Continue.png</normaloff>../pics/Continue.png</iconset>
+   </property>
+   <property name="text">
+    <string>继续游戏(C)</string>
+   </property>
+   <property name="toolTip">
+    <string>继续游戏(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>C</string>
+   </property>
+  </action>
+  <action name="Pauseaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Pause.png</normaloff>../pics/Pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>暂停游戏(P)</string>
+   </property>
+   <property name="toolTip">
+    <string>暂停游戏(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>P</string>
+   </property>
+  </action>
+  <action name="Saveaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Save.png</normaloff>../pics/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存游戏(Ctrl+S)</string>
+   </property>
+   <property name="toolTip">
+    <string>保存游戏(Ctrl+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="Quitaction">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pics/Quit.png</normaloff>../pics/Quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出游戏(Q)</string>
+   </property>
+   <property name="toolTip">
+    <string>退出游戏(Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Q</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
