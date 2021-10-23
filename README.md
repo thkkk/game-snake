@@ -1,5 +1,5 @@
 # game-snake
-A snake game made with QT.
+A snake game built with QT.
 
 My homework when I was freshman.  The code is nearly **unreadable**, but I don't want to change it. 
 
